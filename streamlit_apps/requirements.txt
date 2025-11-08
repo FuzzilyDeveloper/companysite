@@ -1,0 +1,9 @@
+# Streamlit Applications Requirements
+streamlit==1.28.1
+pandas==2.1.2
+numpy==1.26.1
+plotly==5.18.0
+scikit-learn==1.3.2
+prophet==1.1.4
+nltk==3.8.1
+textblob==0.17.1
