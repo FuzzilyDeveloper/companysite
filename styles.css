@@ -2,9 +2,13 @@
     --primary: #7C6FF1; /* Soft indigo */
     --primary-2: #6B5AE8; /* Slightly deeper */
     --accent: #FFD6E8; /* Soft pink accent */
+    --accent-2: #4ECDC4; /* Teal accent */
+    --accent-3: #FFD93D; /* Golden accent */
     --bg-1: #FBF8FF; /* Very light lavender */
     --bg-2: #FFF7FB; /* Very light rose */
     --dark: #0f172a; /* Keep for text */
+    --dark-bg: #1a1f35; /* Dark background */
+    --dark-card: #252b42; /* Dark card background */
     --gray: #64748b;
     --muted: #f6f5ff; /* Card/section gentle background */
     --light: #f8fafc;
@@ -170,6 +174,14 @@ nav a.nav-link:hover {
     background: var(--primary-2);
     transform: translateY(-4px) scale(1.01);
     box-shadow: 0 18px 40px rgba(107,90,232,0.12);
+}
+
+.btn-secondary {
+    background: linear-gradient(90deg, var(--accent-2), #3db8b0);
+}
+
+.btn-secondary:hover {
+    background: #3db8b0;
 }
 
 /* Sections */
@@ -429,6 +441,171 @@ footer a {
     color: var(--dark);
 }
 
+/* ML Services Showcase - Dark Theme */
+.services-showcase {
+    background: linear-gradient(135deg, var(--dark-bg), #252b45);
+    padding: 6rem 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(124,111,241,0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(78,205,196,0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.section-title-dark {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 800;
+    position: relative;
+    z-index: 1;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.ml-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.ml-service-card {
+    background: linear-gradient(135deg, var(--dark-card), rgba(37,43,66,0.95));
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid rgba(124,111,241,0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.ml-service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--accent-2), var(--accent-3));
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.ml-service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.ml-service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(124,111,241,0.3);
+    border-color: var(--primary);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 4px 12px rgba(124,111,241,0.4));
+}
+
+.ml-service-card h3 {
+    font-size: 1.6rem;
+    margin: 0 0 1rem;
+    color: white;
+    font-weight: 700;
+}
+
+.ml-service-card p {
+    color: rgba(255,255,255,0.8);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-features li {
+    color: rgba(255,255,255,0.7);
+    padding: 0.6rem 0;
+    padding-left: 1.8rem;
+    position: relative;
+    font-size: 0.95rem;
+}
+
+.service-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-2);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.animate-fade-in-delay {
+    animation: fadeIn 0.8s ease-out 0.2s backwards;
+}
+
+.animate-fade-in-delay-2 {
+    animation: fadeIn 0.8s ease-out 0.4s backwards;
+}
+
+.animate-fade-in-delay-3 {
+    animation: fadeIn 0.8s ease-out 0.6s backwards;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.6s ease-out backwards;
+}
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 3rem;
@@ -446,5 +623,13 @@ footer a {
     
     .contact-container {
         grid-template-columns: 1fr;
+    }
+    
+    .ml-services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title-dark {
+        font-size: 2rem;
     }
 }
