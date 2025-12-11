@@ -563,6 +563,31 @@ footer a {
     font-size: 1.1rem;
 }
 
+/* Chatbot Section */
+.chatbot-section {
+    background: linear-gradient(135deg, #1e2338, #2a3150);
+    padding: 6rem 5%;
+    position: relative;
+}
+
+.chatbot-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    height: 700px;
+    position: relative;
+}
+
+.chatbot-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from {
