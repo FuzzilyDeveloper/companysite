@@ -15,6 +15,9 @@
     <style>
         
     </style>
+    <script
+  src="https://cdn.jsdelivr.net/gh/logspace-ai/langflow-embedded-chat@v1.0.7/dist/build/static/js/bundle.min.js">
+</script>
 </head>
 <body>
 
@@ -131,23 +134,37 @@
     <section class="chatbot-section">
         <h2 class="section-title-dark">Try Our AI Chatbot</h2>
         <p class="section-subtitle">Experience our LangChain-powered conversational AI in action</p>
-        <div class="chatbot-container">
+        <div class="chatbot-container" style="max-width:320px;margin:auto;">
             <iframe 
                 src="https://ai-chatbot-langchain-syumzjqnaazqyh2qtw4dcm.streamlit.app/?embed=true" 
-                class="chatbot-iframe"
+                style="width:300px;height:180px;border:1px solid #eee;border-radius:8px;"
                 allowfullscreen
                 title="AI Chatbot">
             </iframe>
         </div>
     </section>
 
+    
+    <section class="chatbot-section">
+        <h2 class="section-title-dark">Try Our AI Chatbot</h2>
+        <p class="section-subtitle">Experience our LangChain-powered conversational AI in action</p>
+        <div class="chatbot-container" style="max-width:320px;margin:auto;min-height:200px;display:flex;align-items:center;justify-content:center;">
+            <langflow-chat
+                window_title="New Flow"
+                flow_id="c68e82cf-685d-474b-a6b6-33dd6d3135ea"
+                host_url="http://localhost:7860"
+                style="width:300px;height:180px;border:1px solid #eee;border-radius:8px;display:block;"
+            ></langflow-chat>
+        </div>
+    </section>
+
         <section class="chatbot-section">
         <h2 class="section-title-dark">Try Our AI Chatbot</h2>
         <p class="section-subtitle">Experience our LangChain-powered conversational AI in action</p>
-        <div class="chatbot-container">
+        <div class="chatbot-container" style="max-width:320px;margin:auto;">
             <iframe 
                 src="https://pdfreader-ad5rmnhrafnhqdenf4awax.streamlit.app/" 
-                class="chatbot-iframe"
+                style="width:300px;height:180px;border:1px solid #eee;border-radius:8px;"
                 allowfullscreen
                 title="AI Chatbot">
             </iframe>
