@@ -22,8 +22,8 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo">InData Labs</a>
-        <nav>
+</header>
+ <nav>
             <ul>
                 <li><a class="nav-link" href="index.html"><span class="nav-dot"></span>Home</a></li>
                 <li><a class="nav-link" href="about.html"><span class="nav-dot" style="background:linear-gradient(90deg,#FFD6E8,#FFB3D1)"></span>About</a></li>
@@ -32,42 +32,73 @@
                 <li><a class="nav-link" href="contact.html"><span class="nav-dot" style="background:linear-gradient(90deg,#7C6FF1,#6B5AE8)"></span>Contact</a></li>
             </ul>
         </nav>
+<!-- HERO BANNER SECTION -->
+<section class="hero-banner" style="position:relative;width:100%;min-height:340px;background:linear-gradient(120deg,#0a1a2f 60%,#1a2a4f 100%);overflow:hidden;display:flex;align-items:center;justify-content:center;">
+        <div style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;">
+                <img id="hero-rotating-img" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80" alt="Tech Banner" style="width:100%;height:100%;object-fit:cover;opacity:0.18;transition:opacity 0.7s;" />
+        </div>
+        <div style="position:relative;z-index:2;max-width:900px;margin:0 auto;text-align:center;padding:3.5rem 1rem 2.5rem 1rem;">
+                <h1 style="font-size:2.7rem;font-weight:900;color:#fff;letter-spacing:-2px;margin-bottom:1.2rem;">Big on Data Science & AI</h1>
+                <h2 style="font-size:1.3rem;font-weight:500;color:#e0e6f7;margin-bottom:2.2rem;">Empowering Your Business with Data Science and AI Technology</h2>
+        </div>
+</section>
+<script>
+// Rotating hero banner images
+const heroImages = [
+    'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=1200&q=80',
+    'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&q=80',
+    'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80'
+];
+let heroIdx = 0;
+setInterval(() => {
+    heroIdx = (heroIdx + 1) % heroImages.length;
+    const img = document.getElementById('hero-rotating-img');
+    if(img) {
+        img.style.opacity = 0.08;
+        setTimeout(() => {
+            img.src = heroImages[heroIdx];
+            img.style.opacity = 0.18;
+        }, 400);
+    }
+}, 3500);
+</script>
+
+
+                <!-- Banner Section with Rotating Image and Headline -->
+            <!--    <section class="banner-section" style="width:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(90deg,#f6f5ff,#e8e6ff);padding:2.5rem 0 2rem 0;flex-wrap:wrap;">
+                        <div style="flex:1 1 320px;min-width:280px;max-width:480px;display:flex;align-items:center;justify-content:center;">
+                                <img id="banner-image" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&q=80" alt="AI Banner" style="width:100%;max-width:420px;border-radius:18px;box-shadow:0 8px 32px rgba(124,111,241,0.10);transition:opacity 0.7s;" />
+                        </div>
+                        <div style="flex:1 1 320px;min-width:280px;max-width:480px;padding:0 2rem;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+                                <h1 style="font-size:2.2rem;font-weight:800;color:#6B5AE8;margin-bottom:1rem;">Empowering Business with AI</h1>
+                                <p style="font-size:1.2rem;color:#444;max-width:400px;">Discover how our machine learning and data science solutions can transform your company. Explore our services and try our interactive AI demos below!</p>
+                        </div>
+                </section>
+                <script>
+                // Simple rotating banner image
+                const bannerImages = [
+                    'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&q=80',
+                    'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=600&q=80',
+                    'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&q=80'
+                ];
+                let bannerIdx = 0;
+                setInterval(() => {
+                    bannerIdx = (bannerIdx + 1) % bannerImages.length;
+                    const img = document.getElementById('banner-image');
+                    if(img) {
+                        img.style.opacity = 0.2;
+                        setTimeout(() => {
+                            img.src = bannerImages[bannerIdx];
+                            img.style.opacity = 1;
+                        }, 400);
+                    }
+                }, 3500);
+                </script> -->
+        <a href="index.html" class="logo">InData Labs</a>
+       
     </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="animate-fade-in">Machine Learning Consultancy & Services</h1>
-            <h2 class="animate-fade-in-delay">Transform Your Business with Data-Driven AI Solutions</h2>
-            <p class="hero-quote animate-fade-in-delay-2">We provide end-to-end machine learning consultancy — from strategy to deployment. Our expert team builds production-ready AI systems tailored to your business needs.</p>
-            <div class="animate-fade-in-delay-3">
-                <a href="#services" class="btn">Our Services</a>
-                <a href="#contact" class="btn btn-secondary">Get Consultation</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="stats-section">
-        <h2>Why Companies Choose Us</h2>
-        <div class="stats-grid">
-            <div class="stat-item">
-                <h3>20+</h3>
-                <p>Years of applied experience</p>
-            </div>
-            <div class="stat-item">
-                <h3>500+</h3>
-                <p>Projects delivered worldwide</p>
-            </div>
-            <div class="stat-item">
-                <h3>200+</h3>
-                <p>Qualified AI & data experts</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="services-showcase">
-        <h2 class="section-title-dark">Our Machine Learning Services</h2>
-        <p class="section-subtitle">Comprehensive AI solutions designed to accelerate your digital transformation</p>
-        <div class="ml-services-grid">
+    <section class="services-columns" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin: 2rem 0;">
+        <div style="flex: 1 1 350px; min-width: 320px; max-width: 500px;">
             <div class="ml-service-card animate-slide-up">
                 <div class="service-icon">🤖</div>
                 <h3>ML Model Development</h3>
@@ -78,34 +109,13 @@
                     <li>Model Optimization & Tuning</li>
                 </ul>
             </div>
-            <div class="ml-service-card animate-slide-up" style="animation-delay: 0.1s">
-                <div class="service-icon">📊</div>
-                <h3>Data Science Consulting</h3>
-                <p>Strategic guidance to help you leverage your data assets and build a robust AI roadmap for your organization.</p>
-                <ul class="service-features">
-                    <li>Data Strategy & Architecture</li>
-                    <li>Analytics Implementation</li>
-                    <li>ROI Assessment & Planning</li>
-                </ul>
-            </div>
             <div class="ml-service-card animate-slide-up" style="animation-delay: 0.2s">
                 <div class="service-icon">🔍</div>
                 <h3>Computer Vision</h3>
                 <p>Advanced image and video analysis solutions for automation, quality control, and intelligent monitoring systems.</p>
-                <ul class="service-features">
                     <li>Object Detection & Recognition</li>
                     <li>Image Classification & Segmentation</li>
                     <li>Video Analytics & Tracking</li>
-                </ul>
-            </div>
-            <div class="ml-service-card animate-slide-up" style="animation-delay: 0.3s">
-                <div class="service-icon">💬</div>
-                <h3>Natural Language Processing</h3>
-                <p>Transform unstructured text data into actionable insights with cutting-edge NLP and language understanding models.</p>
-                <ul class="service-features">
-                    <li>Text Classification & Sentiment Analysis</li>
-                    <li>Named Entity Recognition</li>
-                    <li>Chatbots & Conversational AI</li>
                 </ul>
             </div>
             <div class="ml-service-card animate-slide-up" style="animation-delay: 0.4s">
@@ -116,6 +126,28 @@
                     <li>Model Deployment & Scaling</li>
                     <li>Monitoring & Performance Tracking</li>
                     <li>CI/CD for ML Pipelines</li>
+                </ul>
+            </div>
+        </div>
+        <div style="flex: 1 1 350px; min-width: 320px; max-width: 500px;">
+            <div class="ml-service-card animate-slide-up" style="animation-delay: 0.1s">
+                <div class="service-icon">📊</div>
+                <h3>Data Science Consulting</h3>
+                <p>Strategic guidance to help you leverage your data assets and build a robust AI roadmap for your organization.</p>
+                <ul class="service-features">
+                    <li>Data Strategy & Architecture</li>
+                    <li>Analytics Implementation</li>
+                    <li>ROI Assessment & Planning</li>
+                </ul>
+            </div>
+            <div class="ml-service-card animate-slide-up" style="animation-delay: 0.3s">
+                <div class="service-icon">💬</div>
+                <h3>Natural Language Processing</h3>
+                <p>Transform unstructured text data into actionable insights with cutting-edge NLP and language understanding models.</p>
+                <ul class="service-features">
+                    <li>Text Classification & Sentiment Analysis</li>
+                    <li>Named Entity Recognition</li>
+                    <li>Chatbots & Conversational AI</li>
                 </ul>
             </div>
             <div class="ml-service-card animate-slide-up" style="animation-delay: 0.5s">
@@ -130,7 +162,7 @@
             </div>
         </div>
     </section>
-
+<!-- 
     <section class="chatbot-section">
         <h2 class="section-title-dark">Try Our AI Chatbot</h2>
         <p class="section-subtitle">Experience our LangChain-powered conversational AI in action</p>
@@ -169,7 +201,33 @@
                 title="AI Chatbot">
             </iframe>
         </div>
+    </section> -->
+
+    <section class="chatbot-section">
+    <h2 class="section-title-dark">Try Our AI Chatbot</h2>
+    <p class="section-subtitle">Experience our LangChain-powered conversational AI in action</p>
+    <div class="chatbot-row" style="display:flex;justify-content:center;align-items:flex-start;gap:32px;margin:2rem 0;flex-wrap:wrap;">
+        <iframe 
+            src="https://ai-chatbot-langchain-syumzjqnaazqyh2qtw4dcm.streamlit.app/?embed=true" 
+            style="width:300px;height:180px;border:1px solid #eee;border-radius:8px;"
+            allowfullscreen
+            title="AI Chatbot">
+        </iframe>
+        <langflow-chat
+            window_title="New Flow"
+            flow_id="c68e82cf-685d-474b-a6b6-33dd6d3135ea"
+            host_url="http://localhost:7860"
+            style="width:300px;height:180px;border:1px solid #eee;border-radius:8px;display:block;">
+        </langflow-chat>
+        <iframe 
+            src="https://pdfreader-ad5rmnhrafnhqdenf4awax.streamlit.app/" 
+            style="width:300px;height:180px;border:1px solid #eee;border-radius:8px;"
+            allowfullscreen
+            title="AI Chatbot">
+        </iframe>
+    </div>
     </section>
+
 
     <section class="report-section">
         <h2>Free Report: AI & Big Data Trends 2025</h2>
