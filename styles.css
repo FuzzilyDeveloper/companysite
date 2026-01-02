@@ -2,11 +2,11 @@
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
 
 :root {
-    --primary-color: #3b82f6; /* Blue */
-    --secondary-color: #8b5cf6; /* Purple */
-    --accent-color: #10b981; /* Green */
-    --success-color: #059669; /* Darker green */
-    --info-color: #06b6d4; /* Teal */
+    --primary-color: #1e40af; /* Rich Blue */
+    --secondary-color: #059669; /* Rich Green */
+    --accent-color: #10b981; /* Emerald Green */
+    --success-color: #047857; /* Dark Emerald */
+    --info-color: #0891b2; /* Teal */
     --warning-color: #f59e0b; /* Orange */
     --danger-color: #ef4444; /* Red */
     --dark-color: #1f2937;
@@ -58,28 +58,76 @@ body {
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
     color: var(--primary-color) !important;
-    background-color: rgba(59, 130, 246, 0.1);
+    background-color: rgba(30, 64, 175, 0.1);
 }
 
-/* Hero Section */
-.hero-gradient {
-    min-height: 100vh;
+.hero-carousel {
     position: relative;
     overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    min-height: 80vh;
 }
 
-.hero-gradient::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(59, 130, 246, 0.7), rgba(139, 92, 246, 0.7), rgba(16, 185, 129, 0.7));
-    z-index: 1;
+.hero-carousel .carousel-item img {
+    filter: brightness(0.6);
+    transition: filter 0.5s ease;
+}
+
+.hero-carousel .carousel-item:hover img {
+    filter: brightness(0.7);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-carousel .carousel-caption {
+    bottom: 15%;
+    left: 10%;
+    right: 10%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-carousel .carousel-caption h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-carousel .carousel-caption p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.hero-carousel .carousel-indicators {
+    bottom: 10px;
+}
+
+.hero-carousel .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    margin: 0 5px;
+}
+
+.hero-carousel .carousel-indicators .active {
+    background-color: #10b981;
+}
+
+/* Carousel Controls */
+.hero-carousel .carousel-control-prev,
+.hero-carousel .carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+}
+
+.hero-carousel .carousel-control-prev:hover,
+.hero-carousel .carousel-control-next:hover {
+    opacity: 1;
 }
 
 /* Page-specific hero backgrounds */
@@ -97,6 +145,92 @@ body {
 
 .contact-hero {
     background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3');
+}
+
+/* Animated Hero Elements */
+.floating-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(30, 64, 175, 0.1), rgba(5, 150, 105, 0.1));
+    animation: float 6s ease-in-out infinite;
+}
+
+.shape:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+    animation-duration: 8s;
+}
+
+.shape:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    right: 10%;
+    animation-delay: 2s;
+    animation-duration: 10s;
+}
+
+.shape:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 4s;
+    animation-duration: 12s;
+}
+
+.shape:nth-child(4) {
+    width: 40px;
+    height: 40px;
+    top: 60%;
+    right: 20%;
+    animation-delay: 1s;
+    animation-duration: 9s;
+}
+
+.shape:nth-child(5) {
+    width: 70px;
+    height: 70px;
+    bottom: 10%;
+    right: 30%;
+    animation-delay: 3s;
+    animation-duration: 11s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.7;
+    }
+    25% {
+        transform: translateY(-20px) rotate(90deg);
+        opacity: 0.9;
+    }
+    50% {
+        transform: translateY(-40px) rotate(180deg);
+        opacity: 0.6;
+    }
+    75% {
+        transform: translateY(-20px) rotate(270deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0px) rotate(360deg);
+        opacity: 0.7;
+    }
 }
 
 /* Cards */
@@ -154,7 +288,7 @@ body {
 .btn-primary:hover {
     background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 10px 20px rgba(30, 64, 175, 0.3);
 }
 
 .btn-success {
@@ -369,7 +503,7 @@ footer a:hover {
 /* Focus states */
 .btn:focus,
 .form-control:focus {
-    box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(30, 64, 175, 0.25);
 }
 
 /* Loading animation */

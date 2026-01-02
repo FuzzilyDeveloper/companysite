@@ -150,35 +150,72 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-gradient text-white position-relative">
-        <div class="floating-shapes">
-            <div class="shape"></div>
-            <div class="shape"></div>
-            <div class="shape"></div>
-        </div>
-        <div class="container position-relative" style="z-index: 2;">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6">
-                    <h1 class="display-1 fw-bold mb-4">
-                        Build & Deploy<br>
-                        <span class="text-warning">AI Agents</span>
-                    </h1>
-                    <p class="lead mb-4 fs-4">
-                        Transform your business with intelligent automation. We build custom AI agents and provide ready-made ML solutions for data analysis, prediction, and natural language processing.
-                    </p>
-                    <div class="d-flex gap-3 flex-wrap">
-                        <a href="#agents" class="btn btn-light btn-lg px-4 py-3">
-                            <i class="bi bi-play-circle-fill me-2"></i>Try Our Agents
-                        </a>
-                        <a href="contact.html" class="btn btn-outline-light btn-lg px-4 py-3">
-                            <i class="bi bi-gear-fill me-2"></i>Build Custom Agent
-                        </a>
+    <!-- Rotating Images Banner -->
+    <section class="hero-carousel position-relative">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3" class="d-block w-100" alt="AI Technology" style="height: 80vh; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-2 fw-bold mb-3">AI-Powered Solutions</h1>
+                        <p class="lead fs-4">Transforming businesses with intelligent automation</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="text-center">
-                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80" alt="AI Agent Illustration" class="img-fluid rounded-3 shadow-lg" style="max-width: 80%;">
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3" class="d-block w-100" alt="Machine Learning" style="height: 80vh; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-2 fw-bold mb-3">Machine Learning Excellence</h1>
+                        <p class="lead fs-4">Advanced algorithms for data-driven insights</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" class="d-block w-100" alt="Data Science Team" style="height: 80vh; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-2 fw-bold mb-3">Expert Data Science Team</h1>
+                        <p class="lead fs-4">Building the future of intelligent systems</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3" class="d-block w-100" alt="Innovation" style="height: 80vh; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-2 fw-bold mb-3">Innovation & Automation</h1>
+                        <p class="lead fs-4">Streamlining operations with smart technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold text-dark mb-4">Ready to Get Started?</h2>
+                    <p class="lead fs-5 mb-4 text-muted">Explore our AI agents and discover how we can transform your business</p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="#agents" class="btn btn-primary btn-lg px-4 py-3">
+                            <i class="bi bi-play-circle-fill me-2"></i>Try Our Agents
+                        </a>
+                        <a href="contact.html" class="btn btn-success btn-lg px-4 py-3">
+                            <i class="bi bi-gear-fill me-2"></i>Build Custom Agent
+                        </a>
                     </div>
                 </div>
             </div>
@@ -221,7 +258,7 @@
                     <div class="card h-100 border-0 shadow-sm hover-lift">
                         <div class="card-body text-center p-4">
                             <div class="mb-3">
-                                <i class="bi bi-rocket-takeoff-fill text-warning" style="font-size: 3rem;"></i>
+                                <i class="bi bi-rocket-takeoff-fill text-success" style="font-size: 3rem;"></i>
                             </div>
                             <h4 class="card-title fw-bold">MLOps & Deployment</h4>
                             <p class="card-text text-muted">Production-ready deployment with monitoring, scaling, and continuous improvement of your AI systems.</p>
@@ -281,7 +318,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="agent-card text-center h-100">
                         <div class="mb-3">
-                            <i class="bi bi-graph-up text-warning" style="font-size: 2.5rem;"></i>
+                            <i class="bi bi-graph-up text-primary" style="font-size: 2.5rem;"></i>
                         </div>
                         <h5 class="fw-bold mb-3">Time Series Analyzer</h5>
                         <p class="text-muted mb-3">Advanced time series forecasting and trend analysis for predictive insights.</p>
@@ -311,7 +348,7 @@
                     <p class="mb-0">System Uptime</p>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <div class="stats-counter text-warning">10k+</div>
+                    <div class="stats-counter text-success">10k+</div>
                     <p class="mb-0">Predictions Made</p>
                 </div>
             </div>
