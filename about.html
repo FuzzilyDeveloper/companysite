@@ -3,55 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Company Name</title>
+    <title>About Us - InData Labs</title>
+    <meta name="description" content="Learn about InData Labs - specialists in AI agents, machine learning solutions, and intelligent automation.">
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">InData Labs</a>
-        <nav>
-            <ul>
-                <li><a class="nav-link" href="index.html"><span class="nav-dot"></span>Home</a></li>
-                <li><a class="nav-link" href="about.html"><span class="nav-dot" style="background:linear-gradient(90deg,#FFD6E8,#FFB3D1)"></span>About</a></li>
-                <li><a class="nav-link" href="services.html"><span class="nav-dot" style="background:linear-gradient(90deg,#CFF6E2,#AEEAD7)"></span>Services</a></li>
-                <li><a class="nav-link" href="projects.html"><span class="nav-dot" style="background:linear-gradient(90deg,#FFE6A7,#FFD07A)"></span>Projects</a></li>
-                <li><a class="nav-link" href="contact.html"><span class="nav-dot" style="background:linear-gradient(90deg,#7C6FF1,#6B5AE8)"></span>Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero hero-small" style="background: linear-gradient(180deg, rgba(255,214,232,0.12), rgba(251,248,255,0.02)), url('https://images.unsplash.com/photo-1559526324-593bc073d938?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;">
-            <div class="hero-content">
-                <h1>About InData Labs</h1>
-                <p class="hero-quote" style="color:rgba(15,23,42,0.85)">We combine domain expertise with modern ML engineering to build reliable, production-grade AI systems.</p>
-                <a href="contact.html" class="btn">Work With Us</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="bi bi-robot me-2"></i>InData Labs
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <section class="page-content">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Our Story</h2>
-                    <p>We are a passionate team dedicated to delivering excellence in everything we do. With years of experience in the industry, we've built a reputation for quality and innovation.</p>
-                    
-                    <h2>Our Mission</h2>
-                    <p>To provide cutting-edge solutions that help our clients achieve their goals and transform their businesses through technology and innovation.</p>
-                    
-                    <h2>Our Values</h2>
-                    <ul class="values-list">
-                        <li>Excellence in everything we do</li>
-                        <li>Innovation and creativity</li>
-                        <li>Customer satisfaction</li>
-                        <li>Integrity and transparency</li>
-                    </ul>
+    <!-- Hero Section -->
+    <section class="hero-gradient about-hero text-white position-relative" style="min-height: 60vh;">
+        <div class="container position-relative" style="z-index: 2; padding: 8rem 0;">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">About InData Labs</h1>
+                    <p class="lead fs-4 mb-0">
+                        Pioneering the future of AI agents and intelligent automation solutions.
+                    </p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Company Name. All rights reserved.</p>
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <div class="pe-lg-5">
+                        <h2 class="display-5 fw-bold mb-4 text-dark">Our Story</h2>
+                        <p class="lead mb-4 text-muted">
+                            Founded with a vision to democratize artificial intelligence, InData Labs has been at the forefront of developing intelligent agents that transform how businesses operate.
+                        </p>
+                        <p class="mb-4">
+                            We specialize in creating custom AI agents and deploying ready-made machine learning solutions that automate complex tasks, provide actionable insights, and drive innovation across industries. Our team combines deep expertise in data science, machine learning, and software engineering to deliver production-ready AI systems.
+                        </p>
+
+                        <h3 class="h2 fw-bold mb-4 text-dark">What Sets Us Apart</h3>
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <i class="bi bi-lightning-charge-fill text-warning" style="font-size: 2rem;"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-2">Rapid Deployment</h5>
+                                        <p class="text-muted mb-0">From concept to production in weeks, not months.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <i class="bi bi-shield-check text-success" style="font-size: 2rem;"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-2">Enterprise Security</h5>
+                                        <p class="text-muted mb-0">Bank-grade security and compliance standards.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <i class="bi bi-graph-up-arrow text-primary" style="font-size: 2rem;"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-2">Proven Results</h5>
+                                        <p class="text-muted mb-0">Measurable ROI across all our implementations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="me-3">
+                                        <i class="bi bi-people-fill text-info" style="font-size: 2rem;"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-2">Expert Team</h5>
+                                        <p class="text-muted mb-0">PhD-level researchers and industry veterans.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 2rem;">
+                        <div class="card border-0 shadow-lg mb-4">
+                            <div class="card-body p-4">
+                                <h4 class="card-title fw-bold mb-3 text-primary">Quick Facts</h4>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-muted">Founded</span>
+                                    <span class="fw-bold">2020</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-muted">AI Agents Built</span>
+                                    <span class="fw-bold">50+</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-muted">Team Size</span>
+                                    <span class="fw-bold">15</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-muted">Countries Served</span>
+                                    <span class="fw-bold">12</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 shadow-lg">
+                            <div class="card-body p-4">
+                                <h4 class="card-title fw-bold mb-3 text-primary">Our Mission</h4>
+                                <p class="text-muted mb-0">
+                                    To empower businesses with intelligent automation, making AI accessible, reliable, and transformative for organizations of all sizes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold text-dark mb-3">Meet Our Team</h2>
+                    <p class="lead text-muted fs-5">Experts in AI, ML, and intelligent systems</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Team Member" class="rounded-circle" style="width: 100px; height: 100px; object-fit: cover;">
+                            </div>
+                            <h5 class="card-title fw-bold mb-1">Dr. Sarah Chen</h5>
+                            <p class="text-primary mb-3">Chief AI Officer</p>
+                            <p class="card-text text-muted">Former Google AI researcher with 10+ years in machine learning and neural networks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Team Member" class="rounded-circle" style="width: 100px; height: 100px; object-fit: cover;">
+                            </div>
+                            <h5 class="card-title fw-bold mb-1">Michael Rodriguez</h5>
+                            <p class="text-primary mb-3">Head of Engineering</p>
+                            <p class="card-text text-muted">Ex-Microsoft engineer specializing in scalable ML systems and MLOps.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face" alt="Team Member" class="rounded-circle" style="width: 100px; height: 100px; object-fit: cover;">
+                            </div>
+                            <h5 class="card-title fw-bold mb-1">Dr. Emily Watson</h5>
+                            <p class="text-primary mb-3">Lead Data Scientist</p>
+                            <p class="card-text text-muted">PhD in Statistics with expertise in predictive modeling and time series analysis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-4 fw-bold mb-4">Ready to Build Your AI Agent?</h2>
+            <p class="lead fs-4 mb-4">Let's discuss how we can help transform your business with intelligent automation.</p>
+            <a href="contact.html" class="btn btn-light btn-lg px-5 py-3">
+                <i class="bi bi-envelope-fill me-2"></i>Get In Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-robot me-2"></i>InData Labs
+                    </h5>
+                    <p class="text-muted">Building the future of AI agents and machine learning solutions.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-github fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">Custom Agents</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">ML Solutions</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">MLOps</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h6 class="fw-bold mb-3">Projects</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="projects.html" class="text-muted text-decoration-none">AI Agents</a></li>
+                        <li><a href="projects.html#custom-software" class="text-muted text-decoration-none">Custom Software</a></li>
+                        <li><a href="projects.html#ml-solutions" class="text-muted text-decoration-none">ML Solutions</a></li>
+                        <li><a href="projects.html#live-projects" class="text-muted text-decoration-none">Live Projects</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+                    <p class="text-muted mb-2">
+                        <i class="bi bi-envelope me-2"></i>hello@indatalabs.com
+                    </p>
+                    <p class="text-muted mb-2">
+                        <i class="bi bi-telephone me-2"></i>+1 (555) 123-4567
+                    </p>
+                    <p class="text-muted mb-0">
+                        <i class="bi bi-geo-alt me-2"></i>San Francisco, CA
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">&copy; 2025 InData Labs. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-muted text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

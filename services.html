@@ -3,56 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Company Name</title>
+    <title>Services - InData Labs</title>
+    <meta name="description" content="Custom AI agent development and ready-made ML solutions. Build intelligent automation systems for your business.">
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">InData Labs</a>
-        <nav>
-            <ul>
-                <li><a class="nav-link" href="index.html"><span class="nav-dot"></span>Home</a></li>
-                <li><a class="nav-link" href="about.html"><span class="nav-dot" style="background:linear-gradient(90deg,#FFD6E8,#FFB3D1)"></span>About</a></li>
-                <li><a class="nav-link" href="services.html"><span class="nav-dot" style="background:linear-gradient(90deg,#CFF6E2,#AEEAD7)"></span>Services</a></li>
-                <li><a class="nav-link" href="projects.html"><span class="nav-dot" style="background:linear-gradient(90deg,#FFE6A7,#FFD07A)"></span>Projects</a></li>
-                <li><a class="nav-link" href="contact.html"><span class="nav-dot" style="background:linear-gradient(90deg,#7C6FF1,#6B5AE8)"></span>Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero hero-small" style="background: linear-gradient(180deg, rgba(207,246,226,0.12), rgba(251,248,255,0.02)), url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;">
-            <div class="hero-content">
-                <h1>Services</h1>
-                <p class="hero-quote" style="color:rgba(15,23,42,0.85)">From ML prototyping to production-grade deployments — we partner across the journey.</p>
-                <a href="projects.html" class="btn">See Projects</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="bi bi-robot me-2"></i>InData Labs
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <section class="page-content">
-            <div class="services-grid">
-                <div class="service-card">
-                    <h2>ML Engineering</h2>
-                    <p>Production-ready models, monitoring, and MLOps best practices.</p>
-                </div>
-                <div class="service-card">
-                    <h2>Data Strategy</h2>
-                    <p>Data pipelines, governance, and analytics strategy to unlock value.</p>
-                </div>
-                <div class="service-card">
-                    <h2>Computer Vision</h2>
-                    <p>Custom vision models for automation and analytics.</p>
-                </div>
-                <div class="service-card">
-                    <h2>NLP</h2>
-                    <p>Text understanding, summarization, and conversational AI.</p>
+    <!-- Hero Section -->
+    <section class="hero-gradient services-hero text-white position-relative" style="min-height: 60vh;">
+        <div class="container position-relative" style="z-index: 2; padding: 8rem 0;">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">Our Services</h1>
+                    <p class="lead fs-4 mb-0">
+                        From custom AI agent development to ready-made ML solutions — we handle the full spectrum of intelligent automation.
+                    </p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Company Name. All rights reserved.</p>
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold text-dark mb-3">What We Offer</h2>
+                    <p class="lead text-muted fs-5">Comprehensive AI and ML solutions tailored to your needs</p>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body p-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="me-4">
+                                    <i class="bi bi-robot text-primary" style="font-size: 3rem;"></i>
+                                </div>
+                                <div>
+                                    <h3 class="card-title fw-bold mb-2">Custom AI Agent Development</h3>
+                                    <p class="text-muted mb-0">Bespoke intelligent agents designed for your specific business requirements</p>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <strong>Conversational AI:</strong> Chatbots and virtual assistants
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <strong>Automation Agents:</strong> Workflow and process automation
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <strong>Decision Support:</strong> Intelligent recommendation systems
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <strong>Predictive Agents:</strong> Forecasting and risk assessment
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body p-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="me-4">
+                                    <i class="bi bi-cpu text-success" style="font-size: 3rem;"></i>
+                                </div>
+                                <div>
+                                    <h3 class="card-title fw-bold mb-2">Ready-Made ML Solutions</h3>
+                                    <p class="text-muted mb-0">Pre-built, production-ready machine learning applications</p>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <strong>Data Dashboard:</strong> Interactive analytics and visualization
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <strong>ML Predictor:</strong> Upload data and get instant predictions
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <strong>NLP Analyzer:</strong> Text analysis and sentiment processing
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <strong>Time Series:</strong> Advanced forecasting and trend analysis
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Process Section -->
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold text-dark mb-3">Our Process</h2>
+                    <p class="lead text-muted fs-5">How we turn your vision into reality</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem; font-weight: bold;">
+                                1
+                            </div>
+                        </div>
+                        <h4 class="fw-bold mb-3">Discovery</h4>
+                        <p class="text-muted">We analyze your requirements and define the scope of your AI solution.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem; font-weight: bold;">
+                                2
+                            </div>
+                        </div>
+                        <h4 class="fw-bold mb-3">Design</h4>
+                        <p class="text-muted">Our experts design the AI architecture and select the best algorithms.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <div class="bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem; font-weight: bold;">
+                                3
+                            </div>
+                        </div>
+                        <h4 class="fw-bold mb-3">Development</h4>
+                        <p class="text-muted">We build and train your AI models with rigorous testing and validation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center">
+                        <div class="mb-4">
+                            <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem; font-weight: bold;">
+                                4
+                            </div>
+                        </div>
+                        <h4 class="fw-bold mb-3">Deployment</h4>
+                        <p class="text-muted">Production deployment with monitoring, scaling, and ongoing support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold text-dark mb-3">Technologies We Use</h2>
+                    <p class="lead text-muted fs-5">Cutting-edge tools and frameworks for robust AI solutions</p>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-braces text-primary" style="font-size: 3rem;"></i>
+                        </div>
+                        <h6 class="fw-bold">Python</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-cpu text-success" style="font-size: 3rem;"></i>
+                        </div>
+                        <h6 class="fw-bold">TensorFlow</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-lightning text-warning" style="font-size: 3rem;"></i>
+                        </div>
+                        <h6 class="fw-bold">PyTorch</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-cloud text-info" style="font-size: 3rem;"></i>
+                        </div>
+                        <h6 class="fw-bold">AWS</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-robot text-danger" style="font-size: 3rem;"></i>
+                        </div>
+                        <h6 class="fw-bold">LangChain</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <i class="bi bi-bar-chart text-secondary" style="font-size: 3rem;"></i>
+                        </div>
+                        <h6 class="fw-bold">Streamlit</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="display-4 fw-bold mb-4">Ready to Get Started?</h2>
+            <p class="lead fs-4 mb-4">Let's discuss your AI agent requirements and build something amazing together.</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="contact.html" class="btn btn-light btn-lg px-5 py-3">
+                    <i class="bi bi-envelope-fill me-2"></i>Contact Us
+                </a>
+                <a href="projects.html" class="btn btn-outline-light btn-lg px-5 py-3">
+                    <i class="bi bi-eye-fill me-2"></i>View Our Agents
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-robot me-2"></i>InData Labs
+                    </h5>
+                    <p class="text-muted">Building the future of AI agents and machine learning solutions.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-github fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">Custom Agents</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">ML Solutions</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">MLOps</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h6 class="fw-bold mb-3">Agents</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">Data Dashboard</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">ML Predictor</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">NLP Analyzer</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Time Series</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+                    <p class="text-muted mb-2">
+                        <i class="bi bi-envelope me-2"></i>hello@indatalabs.com
+                    </p>
+                    <p class="text-muted mb-2">
+                        <i class="bi bi-telephone me-2"></i>+1 (555) 123-4567
+                    </p>
+                    <p class="text-muted mb-0">
+                        <i class="bi bi-geo-alt me-2"></i>San Francisco, CA
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">&copy; 2025 InData Labs. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-muted text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

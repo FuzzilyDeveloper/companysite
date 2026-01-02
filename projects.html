@@ -3,77 +3,615 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Company Name</title>
+    <title>Projects - InData Labs</title>
+    <meta name="description" content="Explore our portfolio: AI agents, custom software development, ML solutions, and live projects. From intelligent automation to data-driven applications.">
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">InData Labs</a>
-        <nav>
-            <ul>
-                <li><a class="nav-link" href="index.html"><span class="nav-dot"></span>Home</a></li>
-                <li><a class="nav-link" href="about.html"><span class="nav-dot" style="background:linear-gradient(90deg,#FFD6E8,#FFB3D1)"></span>About</a></li>
-                <li><a class="nav-link" href="services.html"><span class="nav-dot" style="background:linear-gradient(90deg,#CFF6E2,#AEEAD7)"></span>Services</a></li>
-                <li><a class="nav-link" href="projects.html"><span class="nav-dot" style="background:linear-gradient(90deg,#FFE6A7,#FFD07A)"></span>Projects</a></li>
-                <li><a class="nav-link" href="contact.html"><span class="nav-dot" style="background:linear-gradient(90deg,#7C6FF1,#6B5AE8)"></span>Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero hero-small" style="background: linear-gradient(180deg, rgba(255,230,167,0.12), rgba(251,248,255,0.02)), url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;">
-            <div class="hero-content">
-                <h1>Our Projects</h1>
-                <p class="hero-quote" style="color:rgba(15,23,42,0.85)">Explore our portfolio of innovative AI solutions.</p>
-                <a href="contact.html" class="btn">Get in Touch</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="bi bi-robot me-2"></i>InData Labs
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <section class="page-content">
-            <h2 class="section-title">Live Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop" alt="Smart Inventory System">
-                    <h2>Smart Inventory</h2>
-                    <p>Smart inventory management system for real-time tracking and optimization of stock levels.</p>
-                    <div class="project-links">
-                        <a href="https://inventory-dpembbc6lfsxsk9utbmjhr.streamlit.app/" class="btn cloud-btn" target="_blank">Live Demo</a>
-                        <a href="https://github.com/yourusername/stock-analyzer" class="btn github-btn" target="_blank">GitHub</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=800&auto=format&fit=crop" alt="Attendance Management">
-                    <h2>Attendance App</h2>
-                    <p>An app for managing attendance efficiently with real-time tracking and automated reporting.</p>
-                    <div class="project-links">
-                        <a href="https://attendance-jzfnokjswkhnk4i4aeokza.streamlit.app/" class="btn cloud-btn" target="_blank">Live Demo</a>
-                        <a href="https://github.com/yourusername/image-recognition" class="btn github-btn" target="_blank">GitHub</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800&auto=format&fit=crop" alt="Payroll Management">
-                    <h2>Payroll App</h2>
-                    <p>Comprehensive payroll management system for accurate salary calculations and employee compensation tracking.</p>
-                    <div class="project-links">
-                        <a href="https://payroll-app-fa5xdgdvb8eoedonn6y8gr.streamlit.app/" class="btn cloud-btn" target="_blank">Live Demo</a>
-                        <a href="https://github.com/yourusername/social-analytics" class="btn github-btn" target="_blank">GitHub</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="Climate Data Visualizer">
-                    <h2>Climate Data Visualizer</h2>
-                    <p>Interactive climate data visualization and analysis tool. Explore temperature trends, precipitation patterns, and climate indicators.</p>
-                    <div class="project-links">
-                        <a href="https://climate-viz-demo.streamlit.app" class="btn cloud-btn" target="_blank">Live Demo</a>
-                        <a href="https://github.com/yourusername/climate-viz" class="btn github-btn" target="_blank">GitHub</a>
-                    </div>
+    <!-- Hero Section -->
+    <section class="hero-gradient projects-hero text-white position-relative" style="min-height: 60vh;">
+        <div class="container position-relative" style="z-index: 2; padding: 8rem 0;">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">Our Projects</h1>
+                    <p class="lead fs-4 mb-4">
+                        From AI agents to custom software solutions, explore our portfolio of innovative projects that drive business transformation.
+                    </p>
+                    <a href="#ai-agents" class="btn btn-light btn-lg px-5 py-3">
+                        <i class="bi bi-eye-fill me-2"></i>Explore Projects
+                    </a>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Company Name. All rights reserved.</p>
+    <!-- AI Agents Section -->
+    <section id="ai-agents" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold text-dark mb-3">AI Agents</h2>
+                    <p class="lead text-muted fs-5">Ready-made intelligent solutions for data analysis, prediction, and automation</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Data Dashboard -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-3 mb-md-0">
+                                    <div class="bg-primary bg-opacity-10 rounded-3 p-4 d-inline-block">
+                                        <i class="bi bi-bar-chart-line-fill text-primary" style="font-size: 3rem;"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="card-title fw-bold mb-3">Data Analysis Dashboard</h3>
+                                    <p class="card-text text-muted mb-4">
+                                        Interactive data visualization and analysis tool. Upload your datasets and explore insights with beautiful charts, graphs, and statistical analysis.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-primary me-2">Data Visualization</span>
+                                        <span class="badge bg-info me-2">Interactive Charts</span>
+                                        <span class="badge bg-success">Real-time Analysis</span>
+                                    </div>
+                                    <a href="https://data-dashboard-demo.streamlit.app" class="btn btn-primary btn-lg w-100" target="_blank">
+                                        <i class="bi bi-play-fill me-2"></i>Try Data Dashboard
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ML Predictor -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-3 mb-md-0">
+                                    <div class="bg-success bg-opacity-10 rounded-3 p-4 d-inline-block">
+                                        <i class="bi bi-robot text-success" style="font-size: 3rem;"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="card-title fw-bold mb-3">ML Model Predictor</h3>
+                                    <p class="card-text text-muted mb-4">
+                                        Upload your CSV data and get instant machine learning predictions. Features automatic model selection, feature importance analysis, and performance metrics.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-success me-2">Auto ML</span>
+                                        <span class="badge bg-warning me-2">Feature Analysis</span>
+                                        <span class="badge bg-info">Model Comparison</span>
+                                    </div>
+                                    <a href="https://ml-predictor-demo.streamlit.app" class="btn btn-success btn-lg w-100" target="_blank">
+                                        <i class="bi bi-play-fill me-2"></i>Try ML Predictor
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NLP Analyzer -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-3 mb-md-0">
+                                    <div class="bg-info bg-opacity-10 rounded-3 p-4 d-inline-block">
+                                        <i class="bi bi-chat-dots-fill text-info" style="font-size: 3rem;"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="card-title fw-bold mb-3">NLP Text Analyzer</h3>
+                                    <p class="card-text text-muted mb-4">
+                                        Advanced natural language processing tools for text analysis. Perform sentiment analysis, text classification, named entity recognition, and text summarization.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-info me-2">Sentiment Analysis</span>
+                                        <span class="badge bg-primary me-2">Text Classification</span>
+                                        <span class="badge bg-warning">Entity Recognition</span>
+                                    </div>
+                                    <a href="https://nlp-analyzer-demo.streamlit.app" class="btn btn-info btn-lg w-100" target="_blank">
+                                        <i class="bi bi-play-fill me-2"></i>Try NLP Analyzer
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Time Series Analyzer -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-3 mb-md-0">
+                                    <div class="bg-warning bg-opacity-10 rounded-3 p-4 d-inline-block">
+                                        <i class="bi bi-graph-up text-warning" style="font-size: 3rem;"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="card-title fw-bold mb-3">Time Series Forecaster</h3>
+                                    <p class="card-text text-muted mb-4">
+                                        Advanced time series analysis and forecasting. Upload your time series data and get accurate predictions with trend analysis, seasonality detection, and confidence intervals.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-warning me-2">Forecasting</span>
+                                        <span class="badge bg-success me-2">Trend Analysis</span>
+                                        <span class="badge bg-danger">Seasonality Detection</span>
+                                    </div>
+                                    <a href="https://time-series-demo.streamlit.app" class="btn btn-warning btn-lg w-100" target="_blank">
+                                        <i class="bi bi-play-fill me-2"></i>Try Time Series
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Software Section -->
+    <section id="custom-software" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold text-dark mb-3">Custom Software Development</h2>
+                    <p class="lead text-muted fs-5">Tailored software solutions built to meet your specific business needs</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-lg text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-4">
+                                <i class="bi bi-building-fill text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Enterprise Applications</h4>
+                            <p class="card-text text-muted">
+                                Custom business applications, CRM systems, ERP solutions, and workflow automation tools designed for enterprise environments.
+                            </p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Scalable architecture</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Integration capabilities</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>User-friendly interfaces</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-lg text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-4">
+                                <i class="bi bi-phone-fill text-success" style="font-size: 3rem;"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Mobile Applications</h4>
+                            <p class="card-text text-muted">
+                                Native and cross-platform mobile apps for iOS and Android. From consumer apps to enterprise mobility solutions.
+                            </p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Native performance</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Cross-platform compatibility</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>App store deployment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-lg text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-4">
+                                <i class="bi bi-cloud-fill text-info" style="font-size: 3rem;"></i>
+                            </div>
+                            <h4 class="card-title fw-bold mb-3">Web Applications</h4>
+                            <p class="card-text text-muted">
+                                Modern web applications with responsive design, real-time features, and seamless user experiences across all devices.
+                            </p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Responsive design</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Progressive Web Apps</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>API integrations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ML Solutions Section -->
+    <section id="ml-solutions" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold text-dark mb-3">Machine Learning Solutions</h2>
+                    <p class="lead text-muted fs-5">Advanced ML implementations for predictive analytics, automation, and intelligent decision-making</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <div class="bg-warning bg-opacity-10 rounded-3 p-3 d-inline-block">
+                                        <i class="bi bi-graph-up-arrow text-warning" style="font-size: 2.5rem;"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="card-title fw-bold mb-3">Predictive Analytics</h4>
+                                    <p class="card-text text-muted mb-3">
+                                        Custom predictive models for sales forecasting, customer behavior analysis, risk assessment, and demand planning.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-warning me-2">Regression Models</span>
+                                        <span class="badge bg-danger me-2">Classification</span>
+                                        <span class="badge bg-info">Time Series</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <div class="bg-danger bg-opacity-10 rounded-3 p-3 d-inline-block">
+                                        <i class="bi bi-eye-fill text-danger" style="font-size: 2.5rem;"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="card-title fw-bold mb-3">Computer Vision</h4>
+                                    <p class="card-text text-muted mb-3">
+                                        Image recognition, object detection, quality inspection, and visual analytics solutions for manufacturing and retail.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-danger me-2">Image Recognition</span>
+                                        <span class="badge bg-primary me-2">Object Detection</span>
+                                        <span class="badge bg-success">Quality Control</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <div class="bg-success bg-opacity-10 rounded-3 p-3 d-inline-block">
+                                        <i class="bi bi-chat-quote-fill text-success" style="font-size: 2.5rem;"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="card-title fw-bold mb-3">Natural Language Processing</h4>
+                                    <p class="card-text text-muted mb-3">
+                                        Text analysis, chatbots, sentiment analysis, document processing, and language understanding solutions.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-success me-2">Chatbots</span>
+                                        <span class="badge bg-info me-2">Sentiment Analysis</span>
+                                        <span class="badge bg-warning">Document Processing</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <div class="bg-primary bg-opacity-10 rounded-3 p-3 d-inline-block">
+                                        <i class="bi bi-cpu-fill text-primary" style="font-size: 2.5rem;"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="card-title fw-bold mb-3">MLOps & Automation</h4>
+                                    <p class="card-text text-muted mb-3">
+                                        End-to-end ML pipeline automation, model deployment, monitoring, and continuous learning systems.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-primary me-2">Model Deployment</span>
+                                        <span class="badge bg-success me-2">Pipeline Automation</span>
+                                        <span class="badge bg-info">Monitoring</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Projects Section -->
+    <section id="live-projects" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold text-dark mb-3">Live Projects</h2>
+                    <p class="lead text-muted fs-5">Real-world applications built for our clients</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Smart Inventory -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-3 mb-md-0">
+                                    <div class="bg-primary bg-opacity-10 rounded-3 p-4 d-inline-block">
+                                        <i class="bi bi-box-seam-fill text-primary" style="font-size: 3rem;"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="card-title fw-bold mb-3">Smart Inventory Management</h3>
+                                    <p class="card-text text-muted mb-4">
+                                        Real-time inventory tracking and optimization system. Smart inventory management system for real-time tracking and optimization of stock levels.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-primary me-2">Inventory Tracking</span>
+                                        <span class="badge bg-success me-2">Real-time Updates</span>
+                                        <span class="badge bg-info">Optimization</span>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <a href="https://inventory-dpembbc6lfsxsk9utbmjhr.streamlit.app/" class="btn btn-primary flex-fill" target="_blank">
+                                            <i class="bi bi-play-fill me-1"></i>Live Demo
+                                        </a>
+                                        <a href="https://github.com/yourusername/stock-analyzer" class="btn btn-outline-primary" target="_blank">
+                                            <i class="bi bi-github me-1"></i>GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Attendance App -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-3 mb-md-0">
+                                    <div class="bg-success bg-opacity-10 rounded-3 p-4 d-inline-block">
+                                        <i class="bi bi-calendar-check-fill text-success" style="font-size: 3rem;"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="card-title fw-bold mb-3">Attendance Management</h3>
+                                    <p class="card-text text-muted mb-4">
+                                        Comprehensive attendance tracking and management system. An app for managing attendance efficiently with reporting and analytics.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-success me-2">Attendance Tracking</span>
+                                        <span class="badge bg-warning me-2">Reporting</span>
+                                        <span class="badge bg-info">Analytics</span>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <a href="https://attendance-jzfnokjswkhnk4iaeokza.streamlit.app/" class="btn btn-success flex-fill" target="_blank">
+                                            <i class="bi bi-play-fill me-1"></i>Live Demo
+                                        </a>
+                                        <a href="https://github.com/yourusername/image-recognition" class="btn btn-outline-success" target="_blank">
+                                            <i class="bi bi-github me-1"></i>GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payroll App -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-3 mb-md-0">
+                                    <div class="bg-info bg-opacity-10 rounded-3 p-4 d-inline-block">
+                                        <i class="bi bi-cash-stack text-info" style="font-size: 3rem;"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="card-title fw-bold mb-3">Payroll Management</h3>
+                                    <p class="card-text text-muted mb-4">
+                                        Complete payroll processing and employee compensation system. Comprehensive payroll management system for accurate salary calculations and employee compensation tracking.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-info me-2">Payroll Processing</span>
+                                        <span class="badge bg-primary me-2">Salary Calculations</span>
+                                        <span class="badge bg-success">Employee Management</span>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <a href="https://payroll-app-fa5xdgdvb8eoedonn6y8gr.streamlit.app/" class="btn btn-info flex-fill" target="_blank">
+                                            <i class="bi bi-play-fill me-1"></i>Live Demo
+                                        </a>
+                                        <a href="https://github.com/yourusername/social-analytics" class="btn btn-outline-info" target="_blank">
+                                            <i class="bi bi-github me-1"></i>GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Climate Data Visualizer -->
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-md-4 text-center mb-3 mb-md-0">
+                                    <div class="bg-warning bg-opacity-10 rounded-3 p-4 d-inline-block">
+                                        <i class="bi bi-cloud-sun-fill text-warning" style="font-size: 3rem;"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h3 class="card-title fw-bold mb-3">Climate Data Visualizer</h3>
+                                    <p class="card-text text-muted mb-4">
+                                        Interactive climate data visualization and analysis platform. Interactive climate data visualization and analysis tool. Explore temperature trends, precipitation patterns, and climate indicators.
+                                    </p>
+                                    <div class="mb-3">
+                                        <span class="badge bg-warning me-2">Climate Data</span>
+                                        <span class="badge bg-danger me-2">Visualization</span>
+                                        <span class="badge bg-success">Trend Analysis</span>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <a href="https://climate-viz-demo.streamlit.app" class="btn btn-warning flex-fill" target="_blank">
+                                            <i class="bi bi-play-fill me-1"></i>Live Demo
+                                        </a>
+                                        <a href="https://github.com/yourusername/climate-viz" class="btn btn-outline-warning" target="_blank">
+                                            <i class="bi bi-github me-1"></i>GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-4 fw-bold mb-4">Ready to Start Your Project?</h2>
+                    <p class="lead fs-5 mb-4">
+                        Whether you need AI agents, custom software, or ML solutions, we're here to bring your vision to life.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="contact.html" class="btn btn-light btn-lg px-4 py-3">
+                            <i class="bi bi-envelope-fill me-2"></i>Discuss Your Project
+                        </a>
+                        <a href="services.html" class="btn btn-outline-light btn-lg px-4 py-3">
+                            <i class="bi bi-arrow-right me-2"></i>View Our Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-robot me-2"></i>InData Labs
+                    </h5>
+                    <p class="text-muted">Building the future of AI agents and machine learning solutions.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-github fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">Custom Agents</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">ML Solutions</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">MLOps</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h6 class="fw-bold mb-3">Projects</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="projects.html" class="text-muted text-decoration-none">AI Agents</a></li>
+                        <li><a href="projects.html#custom-software" class="text-muted text-decoration-none">Custom Software</a></li>
+                        <li><a href="projects.html#ml-solutions" class="text-muted text-decoration-none">ML Solutions</a></li>
+                        <li><a href="projects.html#live-projects" class="text-muted text-decoration-none">Live Projects</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+                    <p class="text-muted mb-2">
+                        <i class="bi bi-envelope me-2"></i>hello@indatalabs.com
+                    </p>
+                    <p class="text-muted mb-2">
+                        <i class="bi bi-telephone me-2"></i>+1 (555) 123-4567
+                    </p>
+                    <p class="text-muted mb-0">
+                        <i class="bi bi-geo-alt me-2"></i>San Francisco, CA
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">&copy; 2025 InData Labs. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-muted text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
